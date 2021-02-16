@@ -21,20 +21,20 @@
     var CONFIG = {"hostname":"zonjay.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <meta name="description" content="isArray  12345678Array.isArray([]);            &#x2F;&#x2F; trueArray.isArray([1]);           &#x2F;&#x2F; trueArray.isArray(new Array());   &#x2F;&#x2F; trueArray.isArray();              &#x2F;&#x2F; falseArray.isArray(&amp;#123;&amp;#125;);">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="https://zonjay.github.io/Jay/20210124/1243066710/index.html">
+<meta property="og:title" content="javaScript 判斷變數是否為陣列">
+<meta property="og:url" content="https://zonjay.github.io/20210216/2897202132/index.html">
 <meta property="og:site_name" content="風花雪月">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="isArray  12345678Array.isArray([]);            &#x2F;&#x2F; trueArray.isArray([1]);           &#x2F;&#x2F; trueArray.isArray(new Array());   &#x2F;&#x2F; trueArray.isArray();              &#x2F;&#x2F; falseArray.isArray(&amp;#123;&amp;#125;);">
 <meta property="og:locale" content="zh_TW">
-<meta property="article:published_time" content="2021-01-24T05:50:41.484Z">
-<meta property="article:modified_time" content="2021-02-16T13:05:11.495Z">
+<meta property="article:published_time" content="2021-02-16T13:45:01.000Z">
+<meta property="article:modified_time" content="2021-02-16T13:45:41.191Z">
 <meta property="article:author" content="Jay">
 <meta property="article:tag" content="前端,網頁,技術,網頁開發,前端開發,JavaScript,HTML,CSS,vue">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://zonjay.github.io/Jay/20210124/1243066710/">
+<link rel="canonical" href="https://zonjay.github.io/20210216/2897202132/">
 
 
 <script id="page-configurations">
@@ -47,7 +47,7 @@
   };
 </script>
 
-  <title>Hello World | 風花雪月</title>
+  <title>javaScript 判斷變數是否為陣列 | 風花雪月</title>
   
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174949422-2"></script>
     <script>
@@ -129,6 +129,11 @@
     <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首頁</a>
 
   </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分類</a>
+
+  </li>
         <li class="menu-item menu-item-archives">
 
     <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>歸檔</a>
@@ -162,7 +167,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
-    <link itemprop="mainEntityOfPage" href="https://zonjay.github.io/Jay/20210124/1243066710/">
+    <link itemprop="mainEntityOfPage" href="https://zonjay.github.io/20210216/2897202132/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -175,7 +180,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Hello World
+          javaScript 判斷變數是否為陣列
         </h1>
 
         <div class="post-meta">
@@ -184,16 +189,19 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">發表於</span>
+              
 
-              <time title="創建時間：2021-01-24 13:50:41" itemprop="dateCreated datePublished" datetime="2021-01-24T13:50:41+08:00">2021-01-24</time>
+              <time title="創建時間：2021-02-16 21:45:01 / 修改時間：21:45:41" itemprop="dateCreated datePublished" datetime="2021-02-16T21:45:01+08:00">2021-02-16</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新於</span>
-                <time title="修改時間：2021-02-16 21:05:11" itemprop="dateModified" datetime="2021-02-16T21:05:11+08:00">2021-02-16</time>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
               </span>
+              <span class="post-meta-item-text">分類於</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/javascript/" itemprop="url" rel="index"><span itemprop="name">JavaScript</span></a>
+                </span>
+            </span>
 
           
   
@@ -204,8 +212,8 @@
       </span>
       <span class="post-meta-item-text">Disqus：</span>
     
-    <a title="disqus" href="/Jay/20210124/1243066710/#disqus_thread" itemprop="discussionUrl">
-      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="Jay/20210124/1243066710/" itemprop="commentCount"></span>
+    <a title="disqus" href="/20210216/2897202132/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="20210216/2897202132/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -220,15 +228,13 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>Welcome to <a target="_blank" rel="external nofollow noopener noreferrer" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="external nofollow noopener noreferrer" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="external nofollow noopener noreferrer" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="external nofollow noopener noreferrer" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="external nofollow noopener noreferrer" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="external nofollow noopener noreferrer" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="external nofollow noopener noreferrer" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+        <blockquote>
+<p>isArray</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Array</span>.isArray([]);            <span class="comment">// true</span></span><br><span class="line"><span class="built_in">Array</span>.isArray([<span class="number">1</span>]);           <span class="comment">// true</span></span><br><span class="line"><span class="built_in">Array</span>.isArray(<span class="keyword">new</span> <span class="built_in">Array</span>());   <span class="comment">// true</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">Array</span>.isArray();              <span class="comment">// false</span></span><br><span class="line"><span class="built_in">Array</span>.isArray(&#123;&#125;);            <span class="comment">// false</span></span><br><span class="line"><span class="built_in">Array</span>.isArray(<span class="literal">null</span>);          <span class="comment">// false</span></span><br><span class="line"><span class="built_in">Array</span>.isArray(<span class="literal">undefined</span>);     <span class="comment">// false</span></span><br></pre></td></tr></table></figure>
+<h2 id="參考連結"><a href="#參考連結" class="headerlink" title="參考連結"></a>參考連結</h2><ul>
+<li><a target="_blank" rel="external nofollow noopener noreferrer" href="https://ithelp.ithome.com.tw/articles/10190962">重新認識 JavaScript: Day 04 物件、陣列以及型別判斷</a></li>
+</ul>
 
     </div>
 
@@ -243,10 +249,13 @@
 
         
     <div class="post-nav">
-      <div class="post-nav-item"></div>
       <div class="post-nav-item">
-    <a href="/Jay/20210124/2197251373/" rel="next" title="我的第一篇部落格文章">
-      我的第一篇部落格文章 <i class="fa fa-chevron-right"></i>
+    <a href="/20210216/2276958355/" rel="prev" title="hexo 指令">
+      <i class="fa fa-chevron-left"></i> hexo 指令
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/20210216/2393688488/" rel="next" title="javaScript 傳值、傳址、pass by sharing">
+      javaScript 傳值、傳址、pass by sharing <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -313,7 +322,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%83%E8%80%83%E9%80%A3%E7%B5%90"><span class="nav-number">1.</span> <span class="nav-text">參考連結</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -327,13 +336,15 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">4</span>
           <span class="site-state-item-name">文章</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
-        <span class="site-state-item-count">1</span>
-        <span class="site-state-item-name">分類</span>
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分類</span></a>
       </div>
   </nav>
 </div>
@@ -429,9 +440,9 @@
 </script>
 <script>
   var disqus_config = function() {
-    this.page.url = "https://zonjay.github.io/Jay/20210124/1243066710/";
-    this.page.identifier = "Jay/20210124/1243066710/";
-    this.page.title = "Hello World";
+    this.page.url = "https://zonjay.github.io/20210216/2897202132/";
+    this.page.identifier = "20210216/2897202132/";
+    this.page.title = "javaScript 判斷變數是否為陣列";
     };
   NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
     if (window.DISQUS) {
