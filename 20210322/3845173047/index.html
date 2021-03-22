@@ -21,20 +21,22 @@
     var CONFIG = {"hostname":"zonjay.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="isArray  12345678Array.isArray([]);            &#x2F;&#x2F; trueArray.isArray([1]);           &#x2F;&#x2F; trueArray.isArray(new Array());   &#x2F;&#x2F; trueArray.isArray();              &#x2F;&#x2F; falseArray.isArray(&amp;#123;&amp;#125;);">
+  <meta name="description" content="使用 foreach 取得每一行的輸入資料。 利用 split() 將含有空白的字串拆成兩個數字，會回傳一個陣列。  &lt; !–more–&gt;  每一行印出兩個數字誰比較大 兩個數字都是 0 時，便停止程式  1234567891011121314151617function solve(lines) &amp;#123;	lines.forEach((el) &#x3D;&gt; &amp;#123;		le">
 <meta property="og:type" content="article">
-<meta property="og:title" content="javaScript 判斷變數是否為陣列">
-<meta property="og:url" content="https://zonjay.github.io/20210216/2897202132/index.html">
+<meta property="og:title" content="利用 split 拆解字串內的數字，進行數字比大小">
+<meta property="og:url" content="https://zonjay.github.io/20210322/3845173047/index.html">
 <meta property="og:site_name" content="Jay">
-<meta property="og:description" content="isArray  12345678Array.isArray([]);            &#x2F;&#x2F; trueArray.isArray([1]);           &#x2F;&#x2F; trueArray.isArray(new Array());   &#x2F;&#x2F; trueArray.isArray();              &#x2F;&#x2F; falseArray.isArray(&amp;#123;&amp;#125;);">
+<meta property="og:description" content="使用 foreach 取得每一行的輸入資料。 利用 split() 將含有空白的字串拆成兩個數字，會回傳一個陣列。  &lt; !–more–&gt;  每一行印出兩個數字誰比較大 兩個數字都是 0 時，便停止程式  1234567891011121314151617function solve(lines) &amp;#123;	lines.forEach((el) &#x3D;&gt; &amp;#123;		le">
 <meta property="og:locale" content="zh_TW">
-<meta property="article:published_time" content="2021-02-16T13:45:01.000Z">
-<meta property="article:modified_time" content="2021-02-16T13:45:41.191Z">
+<meta property="og:image" content="https://i.imgur.com/tBeXTaX.png">
+<meta property="article:published_time" content="2021-03-22T13:44:27.000Z">
+<meta property="article:modified_time" content="2021-03-22T13:46:26.875Z">
 <meta property="article:author" content="Jay">
-<meta property="article:tag" content="前端,網頁,技術,網頁開發,前端開發,JavaScript,HTML,CSS,vue">
+<meta property="article:tag" content="javaScript">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.imgur.com/tBeXTaX.png">
 
-<link rel="canonical" href="https://zonjay.github.io/20210216/2897202132/">
+<link rel="canonical" href="https://zonjay.github.io/20210322/3845173047/">
 
 
 <script id="page-configurations">
@@ -47,7 +49,7 @@
   };
 </script>
 
-  <title>javaScript 判斷變數是否為陣列 | Jay</title>
+  <title>利用 split 拆解字串內的數字，進行數字比大小 | Jay</title>
   
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174949422-2"></script>
     <script>
@@ -167,7 +169,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
-    <link itemprop="mainEntityOfPage" href="https://zonjay.github.io/20210216/2897202132/">
+    <link itemprop="mainEntityOfPage" href="https://zonjay.github.io/20210322/3845173047/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -180,7 +182,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          javaScript 判斷變數是否為陣列
+          利用 split 拆解字串內的數字，進行數字比大小
         </h1>
 
         <div class="post-meta">
@@ -191,16 +193,7 @@
               <span class="post-meta-item-text">發表於</span>
               
 
-              <time title="創建時間：2021-02-16 21:45:01 / 修改時間：21:45:41" itemprop="dateCreated datePublished" datetime="2021-02-16T21:45:01+08:00">2021-02-16</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分類於</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/javascript/" itemprop="url" rel="index"><span itemprop="name">JavaScript</span></a>
-                </span>
+              <time title="創建時間：2021-03-22 21:44:27 / 修改時間：21:46:26" itemprop="dateCreated datePublished" datetime="2021-03-22T21:44:27+08:00">2021-03-22</time>
             </span>
 
           
@@ -212,8 +205,8 @@
       </span>
       <span class="post-meta-item-text">Disqus：</span>
     
-    <a title="disqus" href="/20210216/2897202132/#disqus_thread" itemprop="discussionUrl">
-      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="20210216/2897202132/" itemprop="commentCount"></span>
+    <a title="disqus" href="/20210322/3845173047/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="20210322/3845173047/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -228,14 +221,17 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <blockquote>
-<p>isArray</p>
-</blockquote>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Array</span>.isArray([]);            <span class="comment">// true</span></span><br><span class="line"><span class="built_in">Array</span>.isArray([<span class="number">1</span>]);           <span class="comment">// true</span></span><br><span class="line"><span class="built_in">Array</span>.isArray(<span class="keyword">new</span> <span class="built_in">Array</span>());   <span class="comment">// true</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">Array</span>.isArray();              <span class="comment">// false</span></span><br><span class="line"><span class="built_in">Array</span>.isArray(&#123;&#125;);            <span class="comment">// false</span></span><br><span class="line"><span class="built_in">Array</span>.isArray(<span class="literal">null</span>);          <span class="comment">// false</span></span><br><span class="line"><span class="built_in">Array</span>.isArray(<span class="literal">undefined</span>);     <span class="comment">// false</span></span><br></pre></td></tr></table></figure>
-<h2 id="參考連結"><a href="#參考連結" class="headerlink" title="參考連結"></a>參考連結</h2><ul>
-<li><a target="_blank" rel="external nofollow noopener noreferrer" href="https://ithelp.ithome.com.tw/articles/10190962">重新認識 JavaScript: Day 04 物件、陣列以及型別判斷</a></li>
-</ul>
-
+        <p><img src="https://i.imgur.com/tBeXTaX.png"></p>
+<ol start="0">
+<li>使用 foreach 取得每一行的輸入資料。</li>
+<li>利用 <code>split()</code> 將含有空白的字串拆成兩個數字，會回傳一個陣列。</li>
+</ol>
+<p>&lt; !–more–&gt;</p>
+<ol start="2">
+<li>每一行印出兩個數字誰比較大</li>
+<li>兩個數字都是 0 時，便停止程式</li>
+</ol>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">solve</span>(<span class="params">lines</span>) </span>&#123;</span><br><span class="line">	lines.forEach(<span class="function">(<span class="params">el</span>) =&gt;</span> &#123;</span><br><span class="line">		<span class="keyword">let</span> numbers = el.split(<span class="string">&#x27; &#x27;</span>);</span><br><span class="line">    	<span class="keyword">let</span> numberA = numbers[<span class="number">0</span>];</span><br><span class="line">    	<span class="keyword">let</span> numberB = numbers[<span class="number">1</span>];</span><br><span class="line"></span><br><span class="line">    	<span class="keyword">if</span> (+numberA === <span class="number">0</span> &amp;&amp; +numberB === <span class="number">0</span> ) &#123;</span><br><span class="line">        	<span class="keyword">return</span>;</span><br><span class="line">    	&#125;</span><br><span class="line"></span><br><span class="line">    	<span class="keyword">if</span> (numberA &gt; numberB) &#123;</span><br><span class="line">       		<span class="built_in">console</span>.log(numberA);</span><br><span class="line">    	&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        	<span class="built_in">console</span>.log(numberB);</span><br><span class="line">    	&#125;</span><br><span class="line">	&#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
     </div>
 
     
@@ -243,6 +239,9 @@
     
 
       <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/javaScript/" rel="tag"># javaScript</a>
+          </div>
 
         
 
@@ -250,13 +249,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/20210216/2276958355/" rel="prev" title="hexo 指令">
-      <i class="fa fa-chevron-left"></i> hexo 指令
+    <a href="/20210321/1551497228/" rel="prev" title="字串轉為陣列，再將陣列內的兩個數字相加">
+      <i class="fa fa-chevron-left"></i> 字串轉為陣列，再將陣列內的兩個數字相加
     </a></div>
-      <div class="post-nav-item">
-    <a href="/20210216/2393688488/" rel="next" title="javaScript 傳值、傳址、pass by sharing">
-      javaScript 傳值、傳址、pass by sharing <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -322,7 +318,6 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%83%E8%80%83%E9%80%A3%E7%B5%90"><span class="nav-number">1.</span> <span class="nav-text">參考連結</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -444,9 +439,9 @@
 </script>
 <script>
   var disqus_config = function() {
-    this.page.url = "https://zonjay.github.io/20210216/2897202132/";
-    this.page.identifier = "20210216/2897202132/";
-    this.page.title = "javaScript 判斷變數是否為陣列";
+    this.page.url = "https://zonjay.github.io/20210322/3845173047/";
+    this.page.identifier = "20210322/3845173047/";
+    this.page.title = "利用 split 拆解字串內的數字，進行數字比大小";
     };
   NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
     if (window.DISQUS) {
